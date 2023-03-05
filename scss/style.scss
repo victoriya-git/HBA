@@ -1,0 +1,1627 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+img{vertical-align: top;}
+ul li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+/* header */
+.header {
+    background: #1E3452;
+	
+    &-content {
+        display: flex;
+        align-items: center;
+        height: 90px;
+	
+		&-menu {
+			
+			font-family: 'Gotham Pro Regular';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 17px;
+			color: #FFFFFF;
+		:hover{
+			box-shadow: inset 0 -3px 0 #D1A64A;
+			cursor: pointer;
+			
+		}				
+		&-market {
+			margin-left: 69px;
+						
+		}
+		&-management {
+			margin-left: 67px;
+		}
+		&-function {
+			margin-left: 67px;
+		}
+		&-profession {
+			margin-left: 58px;
+		}	
+		}
+		
+    }
+	
+	
+}
+.header-btn {
+	background: #D1A64A;
+	border-radius: 100px;
+	width: 119px;
+	height: 38px;
+	margin-left: auto;
+
+	&-lupa  {
+		width: 38px;
+		height: 38px;
+		background: #1E3452;
+		border-radius: 50%;
+		border: 2px solid #D1A64A;
+		margin-left: 18px;
+	}
+&_text {
+	font-family: 'Gotham Pro Regular';
+	font-size: 15px;
+	line-height: 14px;
+	text-align: center;
+	
+
+	color: #FFFFFF;
+}
+}
+
+
+.conteiner {
+    max-width: 1242px;
+    margin: 0 auto;
+}
+.main {
+	margin-bottom: 99px;
+	
+	&-content{
+		height: 595px;
+		background-image: url(../img/image_main.jpg);
+		background-position: 100px 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: space-between;
+		&-academy {
+			&_online {
+				font-family: 'Gotham Pro Regular';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 27px;
+				color: #1D1D1D;
+				padding-top: 65px;
+				
+			}
+			&_hba {
+				font-family: 'Intro Bold Regular';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 60px;
+				line-height: 66px;
+
+				color: #1E3452;
+				padding-top: 17px;
+				
+			}
+			&_btn {
+				width: 360px;
+				height: 52px;
+				background: #21B4C8;
+				border-radius: 100px;
+				margin-top: 54px;
+				margin-left: 5px;
+				&_text {
+					font-family: 'Gotham Pro Regular';
+					font-size: 15px;
+					line-height: 14px;
+					text-align: center;
+					text-transform: uppercase;
+					color: #FFFFFF;
+				}
+				
+			}
+			&_free {
+				font-family: 'Gotham Pro Regular';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 20px;
+				text-transform: lowercase;
+				color: #1E3452;
+				padding-top: 14px;
+				padding-left: 84px;
+
+			}
+			&_statistics {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 76px;
+				padding-left: 6px;
+				&_number {
+					font-family: 'Intro Bold Regular';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 45px;
+					line-height: 45px;
+					color: #D1A64A;
+					&_text {
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 17px;
+						color: #1D1D1D;
+						padding-top: 8px;
+
+					}
+				}
+			}
+		}
+		&-data {
+			background: rgba(255, 255, 255, 0.7);
+			&_btn {
+				width: 176px;
+				height: 40px;
+				background: rgba(255, 255, 255, 0.7);
+				border: 2px solid #21B4C8;
+				border-radius: 100px;
+				margin-left: 53px;
+				
+			}
+			&-raspisanie {
+				font-family: 'Intro Bold Regular';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 22px;
+
+				color: #1E3452;
+				margin-top: 47px;
+				margin-left: 62px;
+				margin-bottom: 38px;
+			}
+			&-city {
+				display: flex;
+				margin-left: 62px;
+				
+				&_hr {
+					width: 299px;
+					height: 1px;
+					background: #21B4C8;
+					margin-left: 53px;
+					margin-bottom: 25px;
+				}
+				&_number {
+					font-family: 'Intro Bold Regular';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 35px;
+					line-height: 35px;
+					color: #1E3452;
+					margin-right: 23px;
+					&_month {
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 14px;
+						color: #1E3452;
+
+					}
+				}
+				&_suzdal {
+					&_place {
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 14px;
+						color: #1D1D1D;
+						
+					}
+					&_hbc {
+					font-family: 'Gotham Pro Regular';
+					font-size: 15px;
+					line-height: 17px;
+					font-weight: 700;
+					color: #1D1D1D;
+					padding-top: 14px;
+					}
+					&_price {
+						font-family: 'Intro Bold Regular';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 20px;
+						color: #21B4C8;
+						padding-top: 11px;
+						padding-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.table {
+	margin-bottom: 126px;
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		height: 160px;
+		&-items {
+			border-top: 1px solid #C6C6C6;
+		}
+		&-itemsright {
+			border-right: 1px solid #C6C6C6;
+		}
+		&-item {
+			width: 311px;
+			border-left: 1px solid #C6C6C6;
+			border-bottom: 1px solid #C6C6C6;
+			&_icon {
+				padding-top: 29px;
+				padding-left: 31px;
+				&_two {
+					padding-top: 24px;
+					padding-left: 31px;
+				}
+				&_seven {
+					padding-top: 20px;
+					padding-left: 31px;
+				}
+			}
+			&_text {
+				display: flex;
+				justify-content: space-between;
+				font-family: 'Gotham Pro Regular';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 23px;
+				color: #1E3452;
+				padding-top: 48px;
+				padding-left: 30px;
+				margin-right: 25px;
+			}
+			
+		}
+	}
+}
+
+.section {
+	&-heading {
+		font-family: 'Intro Bold Regular';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 50px;
+		text-align: center;
+		color: #1E3452;
+		margin-bottom: 14px;
+	}
+	
+	&-hr {
+		width: 57px;
+		height: 3px;
+		background: #D1A64A;
+		margin-bottom: 62px;
+		margin-left: 593px;
+	}
+	&-content {
+		position: relative;
+		
+		&-btnleft {
+			position: absolute;
+			left: -77px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #FFFFFF;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+		&-btnright {
+			position: absolute;
+			right: -77px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #FFFFFF;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+		
+		&-courses {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			&-item {
+				width: calc(50% - 18px);
+				&-key {
+					background: linear-gradient(83.82deg, #0F7A89 5.88%, #21B4C8 90.33%);
+					height: 225px;
+					&_photo {
+						height: 225px;
+						background: url(../img/img_otdel/men.svg) bottom right no-repeat;
+						&_two {
+							height: 225px;
+							background: url(../img/img_otdel/men2\).svg) bottom right no-repeat;	
+						}	
+					}
+					&_text {
+						color: #FFFFFF;
+						margin-left: 16px;
+						
+						&_capital {
+							
+							font-family: 'Intro Bold Regular';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 30px;
+							line-height: 33px;
+							padding-top: 30px;
+	
+						}
+						&_info {
+							margin-top: 25px;
+							
+							font-family: 'Gotham Pro Regular';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 15px;
+							line-height: 19px;
+						}
+					}
+				}
+				&-start {
+					
+					background: #EEEEEE;
+					height: 53px;
+					&_lesson {
+						display: flex;
+						justify-content: space-between;
+						padding-top: 20px;
+						padding-left: 21px;
+						padding-right: 22px;
+						font-family: 'Gotham Pro Regular';
+						font-size: 15px;
+						line-height: 19px;
+						&_hour_icon {
+							margin-right: 6px;
+							&_video {
+								padding-top: 3px;
+								padding-right: 6px;
+							}
+						}
+						
+					}
+				}
+				
+				&-time {
+					border: 1px solid #DEDEDE;
+					height: 127px;
+					display: flex;
+					justify-content: space-around;
+					padding-top: 30px;
+					
+					&_activ {
+						
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 13px;
+						line-height: 1;
+
+						color: #919191;
+
+					}
+					&_btn {
+						width: 354px;
+						height: 66px;
+						background: #D1A64A;
+						border-radius: 100px;
+						
+						&_text {
+							font-family: 'Gotham Pro Regular';
+							font-size: 15px;
+							line-height: 19px;
+							text-align: center;
+							text-transform: uppercase;
+							color: #FFFFFF;
+						}
+						&_black {
+							font-family: 'Gotham Pro Regular';
+							font-size: 15px;
+							line-height: 19px;
+							text-align: center;
+							text-transform: uppercase;
+							color: #7c5d1a;
+							
+							
+						}
+						
+					}
+				}
+			}
+		}
+		
+	}
+	
+	&-btn {
+		width: 350px;
+		height: 52px;
+		background: #fdfdfd;
+		border: 2px solid #21B4C8;
+		border-radius: 100px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 37px;
+		margin-bottom: 61px;
+		&_text {
+			
+			font-family: 'Gotham Pro Regular';
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 1;
+			text-align: center;
+			text-transform: uppercase;
+			color: #333333;
+		}
+	}
+}
+
+.active {
+	height: 840px;
+	background: #F4F4F4;
+	padding-top: 78px;
+	
+	&-lectures {
+		font-family: 'Intro Bold Regular';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 28px;
+		color: #1E3452;
+		padding-bottom: 31px;
+
+	}
+	&-content {
+		max-width: 1242px;
+		margin: 0 auto;
+		position: relative;
+		
+		&-ivan {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			
+			
+			&-stepanov {
+				width: calc(25% - 16px);
+				
+				&_foto {
+					width: 286px;
+					background: #21B4C8;
+					transition: opacity .1s linear;
+					:hover{
+						opacity: 0.3;	
+							
+					}	
+				}
+				
+				&-blok {
+					width: 287px;
+					background: #FFFFFF;
+					padding-left: 19px;
+
+					
+					&-time {
+						display: flex;						
+						padding-top: 25px;
+						padding-left: 2px;
+						
+						&_icon {
+							padding-left: 1px;
+							
+							&_text {
+								font-family: 'Gotham Pro Regular';
+								font-size: 15px;
+								line-height: 19px;
+								color: #333333;
+								padding-left: 8px;
+								padding-right: 23px;
+							}
+							&_two {
+								
+								padding-top: 3px;
+							}
+						}
+					}
+					&_about {
+						font-family: 'Intro Bold Regular';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 22px;
+						color: #1E3452;
+						margin-top: 22px;
+					}
+					&_hr {
+						width: 57px;
+						height: 3px;
+						background: #D1A64A;
+						margin-top: 17px;
+					}
+					&_name {
+						font-family: 'Gotham Pro Regular';
+						font-size: 15px;
+						font-weight: 700;
+						line-height: 19px;
+						color: #333333;
+						margin-top: 17px;
+					}
+					&_expert {
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 19px;
+						color: #A8A8A8;
+						margin-top: 11px;
+						padding-bottom: 23px;
+					}
+					&_hrtwo {
+						height: 1px;
+						background: #DEDEDE;
+						
+						margin-right: 29px;
+						
+					}
+					&-rating {
+						display: flex;
+						padding-top: 23px;
+						padding-bottom: 22px;
+						&_text {
+							font-family: 'Gotham Pro Regular';
+							font-size: 15px;
+							line-height: 19px;
+							color: #333333;
+							&_two {
+								padding-left: 31px;
+								font-family: 'Gotham Pro Regular';
+								font-size: 15px;
+								line-height: 19px;
+								color: #333333;
+							}
+						}
+						&_texts {
+							font-weight: 700;
+						}
+
+					}
+				}
+			}
+		}
+		&-buttonleft {
+			position: absolute;
+			left: -77px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #F4F4F4;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+		&-buttonright {
+			position: absolute;
+			right: -77px;
+			top: 50%;
+			transform: rotateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #F4F4F4;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+		&-btnvideo {
+			width: 340px;
+			height: 52px;
+			background: #F4F4F4;
+			border: 2px solid #21B4C8;
+			border-radius: 100px;
+			margin: 0 auto;
+			display: block;
+			margin-top: 38px;
+			
+				&_text {
+				font-family: 'Gotham Pro';
+				font-size: 15px;
+				font-weight: 700;
+				line-height: 14px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #333333;
+			}
+		}
+	}
+}
+.event {
+	
+	&-nearest {
+		font-family: 'Intro Bold Regular';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 44px;
+		text-align: center;
+		color: #1E3452;
+		margin-top: 69px;
+		&_hr {
+			height: 3px;
+			width: 57px;
+			background: #D1A64A;
+			margin-top: 16px;
+			margin-left: 599.5px;
+		}
+	}
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 52px;
+		&-border {
+			background: url(../img/event/Mask\ Group\ \(1\).svg);
+			
+		}
+		
+		&-rest {
+			box-sizing: border-box;
+			background: #FFFFFF;
+			position: relative;
+			bottom: 7px;
+			right: 7px;
+			&_data {
+				width: 196.89px;
+				height: 102.65px;
+				background: url(../img/event/border.svg);
+				position: relative;
+				bottom: 55px;
+				padding-left: 33px;
+				padding-top: 13.34px;
+ 			
+				&_may {
+					font-family: 'Intro Bold Regular';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 27px;
+					line-height: 1;
+					color: #FFFFFF;
+					
+					
+					
+				}
+				&_city {
+					font-family: 'Gotham Pro Regular';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 1;
+					color: #FFFFFF;
+					margin-top: 7px;
+				}
+				&_time {
+					font-family: 'Gotham Pro Regular';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 1;
+					color: #FFFFFF;
+					margin-top: 9px;
+				}
+			}
+			&_camp {
+				margin-top: -35px;
+				&_item {
+					font-family: 'Gotham Pro Regular';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 23px;
+					line-height: 26px;
+
+					color: #1E3452;
+					&_text {
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 19px;
+						color: #D1A64A;
+						margin-top: 10px;
+						padding-bottom: 26px;
+
+					}
+					&_ctrel {
+						margin-top: 7px;
+						margin-left: 5px;
+					}
+					&_thee {
+						font-family: 'Gotham Pro Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 19px;
+
+						color: #8B8B8B;
+						margin-top: 23px;
+					}
+					&_hr {
+						width: 57px;
+						height: 3px;
+						background: #D1A64A;
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+	&-btn {
+		width: 340px;
+		height: 52px;
+		background: #FFFFFF;
+		border: 2px solid #21B4C8;
+		border-radius: 100px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 48px;
+		margin-bottom: 120px;
+		&_text {
+			font-family: 'Gotham Pro Regular';
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 1;
+			text-align: center;
+			text-transform: uppercase;
+			color: #333333;
+		}
+	}
+}
+ 
+.about {
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #ECECEC url(../img/bacra.svg) bottom right no-repeat;
+	&-us {
+		height: 590px;
+		background: url(../img/aboutus/О\ НАС.svg) 126px 33px/663px 186px no-repeat;
+		&-content {
+			display: flex;
+			justify-content: space-between;
+			
+			&-block {
+				
+				&_hr {
+					width: 57px;
+					height: 3px;
+					background: #D1A64A;
+					margin-top: 98px;
+				}
+				&_main {
+					font-family: 'Intro Regular';
+					font-size: 30px;
+					line-height: 42px;
+					text-transform: uppercase;
+					color: #1E3452;
+					margin-top: 27px;
+				}
+				&_text {
+					font-family: 'Gotham Pro Regular';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 19px;
+					color: #333333;
+					margin-top: 36px;
+				}
+				&_btn {
+					width: 307px;
+					height: 49px;
+					background: #21B4C8;
+					border-radius: 100px;
+					margin-top: 50px;
+					&_text {
+						font-family: 'Gotham Pro Regular';
+						font-size: 15px;
+						line-height: 14px;
+						text-align: center;
+						text-transform: uppercase;
+						color: #FFFFFF;
+					}
+				}
+			}
+			&_img {
+				margin-top: 137px;
+			}
+		}
+		
+	}
+}
+.volov {
+	&-content {
+		background: url(../img/volkov/volkovimg.svg);
+		background-position: 65% 35%;
+		
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: space-between;
+	margin-top: 84px;
+		padding-bottom: 80px;
+		
+		&-profit {
+			font-family: 'Intro Regular';
+			font-size: 35px;
+			line-height: 48px;
+			color: #1E3452;
+			
+		}
+		&-botton {
+			width: 553px;
+			height: 270px;
+			
+			background: #FFFFFF;
+			box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.12);
+			margin-top: 87px;
+			margin-left: 25.5px;
+			
+
+		}
+		&-cards {
+			width: 604px;
+			height: 270px;
+			background: #FFFFFF;
+			box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.12);
+			display: flex;
+			margin-top: -287px;
+			
+
+			
+			&_icon {
+				width: 104px;
+				height: 104px;
+				background: url(../img/volkov/kryg.svg) no-repeat;
+				margin-top: 37px;
+				margin-left: 43px;
+				&_img{
+					padding: 30%;
+				}
+			}
+		}
+		&-info {
+			padding-top: 37px;
+			padding-left: 34px;
+			&_pravo {
+				font-family: 'Gotham Pro';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 23px;
+				line-height: 26px;
+				color: #1E3452;
+			}
+			&_text {
+				font-family: 'Gotham Pro';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 19px;
+				color: #333333;
+				margin-top: 24px;
+				margin-right: 34px;
+			}
+			&_hr {
+				display: flex;
+				margin-top: 30px;
+				:hover{
+					background: #D1A64A;
+				}
+				&_nomber {
+					width: 30px;
+					height: 2px;
+					background: #DCDCDC;
+					margin-left: 15px;
+					
+				}
+			}
+
+		}
+		&-name {
+			font-family: 'Intro Regular';
+			font-size: 25px;
+			line-height: 30px;
+			color: #333333;
+		
+		}
+		&-hr {
+			width: 57px;
+			height: 3px;
+			background: #D1A64A;
+			margin-top: 12px;
+		}
+		&-expert {
+			font-family: 'Gotham Pro';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 19px;
+			color: #868686;
+			margin-top: 21px;
+		}
+		&-block {
+			display: flex;
+			margin-top: 34px;
+			&_img {
+				margin-top: -25px;
+			}
+			&_text {
+				font-family: 'Gotham Pro';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 16px;
+				color: #333333;
+				padding-left: 15px;
+			}
+		}
+	}
+	
+}
+.teachers {
+	
+	background: #F4F4F4;
+	height: 929px;
+	&-sng {
+		font-family: 'Intro Regular';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 35px;
+		line-height: 42px;
+		text-align: center;
+		color: #1E3452;
+		padding-top: 85px;
+
+	}
+	&-hr {
+		width: 57px;
+		height: 3px;
+		background: #D1A64A;
+		margin-left: 582px;
+		margin-top: 31px;
+	}
+	&-text {
+		font-family: 'Gotham Pro';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 19px;
+		text-align: center;
+		color: #333333;
+		margin-top: 31px;
+	}
+	&-russia {
+		max-width: 1242px;
+		margin: 0 auto;
+		position: relative;
+		margin-top: 60px;
+		&-content {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			&-block {
+				width: calc(25% - 15.5px);
+				&-img {
+					// width: 287px;
+					height: 327px;
+					background: #FFFFFF;
+					padding: 20px;
+					padding-left: 48px;
+				}
+				&-text {
+					width: 257px;
+					height: 147px;
+					background: #1E3452;
+					position: relative;
+					top: -56px;
+					left: 17px;
+					&_name {
+						font-family: 'Gotham Pro';
+						font-size: 20px;
+						line-height: 23px;
+						text-align: center;
+						color: #FFFFFF;
+						padding-top: 20px;
+					}
+					&_prof {
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 13px;
+						line-height: 16px;
+						text-align: center;
+						color: #50719E;
+						margin-top: 12px;
+					}
+					&_rating {
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 13px;
+						line-height: 16px;
+						text-align: center;
+						color: #FFFFFF;
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+		&-btnleft {
+			position: absolute;
+			left: -75px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #F4F4F4;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+		&-btnright {
+			position: absolute;
+			right: -75px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #F4F4F4;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+	}
+	&-button {
+		width: 302px;
+		height: 52px;
+		border: 2px solid #21B4C8;
+		border-radius: 100px;
+		margin: 0 auto;
+		display: block;
+		&_text {
+			font-family: 'Gotham Pro';
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 1;
+			text-align: center;
+			text-transform: uppercase;
+			color: #333333;
+		}
+	}
+}
+.process {	
+	height: 692px;
+	background: linear-gradient(135.39deg, #1E3452 22.31%, rgba(30, 66, 82, 0.79) 99.46%);
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		&-academy {
+			padding-top: 141px;
+			padding-left: 74px;
+		
+			&_text {
+				font-family: 'Intro Regular';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 40px;
+				line-height: 44px;
+				color: #FFFFFF;
+				margin-top: -230px;
+				margin-left: -74px;
+			}
+			&_hr {
+				width: 57px;
+				height: 3px;
+				background: #D1A64A;
+				margin-top: 20px;
+				margin-left: -74px;
+			}
+		}
+		&-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+			&-list {
+				padding-top: 123px;
+				padding-left: 87px;
+				&_number {
+					font-family: 'Intro Regular';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 50px;
+					line-height: 50px;
+					color: #D1A64A;
+				}
+				&_title {
+					font-family: 'Gotham Pro';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 23px;
+					line-height: 26px;
+					background: linear-gradient(135.39deg, #243b5a 22.31%, rgba(30, 66, 82, 0.79) 99.46%) 0 0/50px 23px no-repeat;
+					
+					background-size: 60px 23px;
+					color: #FFFFFF;
+					position: relative;
+					top: -20px;
+				}
+				&_titlefa {
+					font-family: 'Gotham Pro';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 23px;
+					line-height: 26px;
+					background: linear-gradient(135.39deg, #434d5c 22.31%, rgba(54, 89, 104, 0.79) 99.46%) 0 0/55px 26px no-repeat;
+					
+					background-size: 66px 26px;
+					color: #FFFFFF;
+					position: relative;
+					top: -20px;
+					
+				}
+				&_titletwo {
+					font-family: 'Gotham Pro';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 23px;
+					line-height: 26px;
+					background: linear-gradient(135.39deg, #525d6d 22.31%, rgba(54, 89, 104, 0.79) 99.46%) 0 0/55px 26px no-repeat;
+					
+					background-size: 66px 26px;
+					color: #FFFFFF;
+					position: relative;
+					top: -20px;
+				}
+				&_text {
+					font-family: 'Gotham Pro';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 19px;
+					color: #89A6BD;
+				}
+			}
+			&-listtwo {
+				padding-top: 70px;
+				&-five {
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+}
+.reviews{
+
+	&-content{
+		font-family: 'Intro Regular';
+		font-size: 35px;
+		line-height: 42px;
+		text-align: center;
+		color: #1E3452;
+		margin-top: 123px;
+
+	}
+	&-hr{
+		width: 57px;
+		height: 3px;
+		background: #D1A64A;
+		margin-top: 10px;
+		margin-left: 582px;
+		
+	}
+	&-row {
+		max-width: 1242px;
+		margin: 0 auto;
+		position: relative;
+		padding-top: 70px;
+		&-block {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			&-anna {
+				width: calc(50% - 14px );
+
+				&-story {
+					
+					height: 326px;
+					background: url(../img/reviews/«.svg)93% 85% no-repeat,url(../img/reviews/sms.svg) 100% no-repeat;
+					padding-left: 30px;
+					
+					&_title {
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 23px;
+						line-height: 26px;
+						color: #1E3452;
+						padding-top: 30px;
+						
+					}
+					&_text {
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 19px;
+						color: #333333;
+						padding-top: 25px;
+
+					}
+					&_next {
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 19px;
+						color: #D1A64A;
+						padding-top: 25px;
+
+					}
+				}
+				&-name {
+					display: flex;
+					&_img {
+						margin-top: 24px;
+					}
+					&_desc {
+						font-family: 'Gotham Pro';
+						font-size: 20px;
+						line-height: 23px;
+						color: #21B4C8;
+						margin-top: 34px;
+						margin-left: 12px;
+					}
+					&_text {
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 13px;
+						line-height: 16px;
+						color: #727272;
+						margin-top: 10px;
+						margin-left: 12px;
+					}
+					&_icon {
+						margin-top: 10px;
+						margin-left: 12px;
+					}
+					&_icontwo {
+						margin-top: 9px;
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+		&_btnleft {
+			position: absolute;
+			left: -75px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #FFFFFF;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+		&_btnright {
+			position: absolute;
+			right: -75px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 61px;
+			height: 61px;
+			background: #FFFFFF;
+			border-radius: 50%;
+			border: 2px solid #D1A64A;
+		}
+	}
+	&-caption {
+		font-family: 'Intro Regular';
+		font-size: 35px;
+		line-height: 42px;
+		text-align: center;
+		color: #1E3452;
+		margin-top: 162px;
+		margin-bottom: 40px;
+	}
+	&-imgs {
+		margin-top: 103px;
+		margin-left: 106px;
+		margin-bottom: 158px;
+	}
+}
+.home {
+	background-color:#EDEDED;
+	height: 406px;
+	margin-top: 68px;
+	padding-top: 76px;
+		
+	&-row {
+		display: flex;
+		justify-content: space-between;
+				
+		&-list {
+ 
+			&-twolist {
+				width: 609px;
+				height: 265px;
+				background: url(../img/home/background.svg);
+				
+				&-text {
+					display: flex;
+					justify-content: space-between;
+					padding-top: 28px;
+					&-item {
+						&_caption {
+							font-family: 'Gotham Pro';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 23px;
+							line-height: 26px;
+							color: #FFFFFF;							
+							margin-left: 28px;
+						}
+						&_texts {
+							font-family: 'Gotham Pro';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 15px;
+							line-height: 17px;
+							color: #FFFFFF;
+							margin-left: 28px;
+							margin-top: 12px;
+						}
+					}
+					&_messenger {
+						padding-right: 40px;
+					}
+				}
+	
+				&-aside {
+					margin-left: 28px;
+				 margin-top: 30px;
+					&_btn {
+						width: 231px;
+						height: 41px;
+						background: #D1A64A;
+						border-radius: 100px;
+						font-family: 'Gotham Pro';
+						font-size: 15px;
+						line-height: 14px;
+						text-align: center;
+						text-transform: uppercase;
+						color: #FFFFFF;
+						margin-left: 15px;
+						
+					}
+					&_button {
+						width: 300px;
+						height: 41px;
+						background: #FFFFFF;
+						border-radius: 100px;
+						font-family: 'Gotham Pro';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 17px;
+						color: #858585;
+						
+		
+					}
+				}
+	
+			}
+					
+		}
+		
+	}
+	&-col { 
+		background: url(../img/home/imagepensel.svg)0 0/100% auto no-repeat;		
+		height: 265px;
+	
+		&-border {
+			width: 605px;
+			height: 265px;
+			border: 2px solid #D1A64A;
+			position: relative;
+			bottom: 228px;
+			right: -8px;
+			
+
+		}
+		&__title {
+			font-family: 'Gotham Pro';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 23px;
+			line-height: 26px;
+			color: #1E3452;
+			margin-top: 38px;
+			margin-left: 40px;
+		}
+		&__text {
+			font-family: 'Gotham Pro';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 17px;
+		color: #1E3452;
+		margin-top: 27px;
+		margin-left: 40px;
+
+		}
+		&__btn {
+			width: 288px;
+			height: 41px;
+			background: #21B4C8;
+			border-radius: 100px;
+			font-family: 'Gotham Pro';
+			font-size: 15px;
+			line-height: 14px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			margin-top: 27px;
+			margin-left: 40px;
+
+		}
+	}
+}
+.footer {
+
+	background: #1E3452;
+	&-logo {
+		height: 300px;
+		display: flex;
+		justify-content: space-between;		
+		padding-top: 50px;
+		
+		&-info {
+			
+			&_tel {
+				font-family: 'Gotham Pro';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 25px;
+				line-height: 31px;
+				color: #FFFFFF;
+				padding-top: 45px;
+			}
+			&_imel {
+				font-family: 'Gotham Pro';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 19px;
+				color: #D1A64A;
+				padding-top: 11px;
+
+			}
+			&-icon {
+				
+				&_img {
+					padding-top: 30px;
+					padding-right: 36px;
+				}
+			}
+		}
+		&-list {
+			font-family: 'Gotham Pro';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 19px;
+			color: #FFFFFF;
+			
+			&_item {
+				padding-bottom: 20px;
+			}
+			&_li {
+				padding-top: 7px;
+				padding-right: 7px;
+			}
+			&_left {
+				padding-left: 13px;
+			}
+		}
+		&-btn {
+			width: 278px;
+			height: 39px;
+			background: #D1A64A;
+			border-radius: 100px;
+			font-family: 'Gotham Pro';
+			font-size: 15px;
+			line-height: 14px;
+			text-align: center;
+			color: #FFFFFF;
+			margin-top: 20px;
+			
+		}
+	}
+	&-hba {
+		height: 92px;
+		
+		display: flex;
+		justify-content: space-between;
+		&_text {
+			font-family: 'Gotham Pro';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 19px;
+			color: #4A6E9F;
+			padding-top: 24px;
+			&-hotel {
+				font-family: 'Gotham Pro';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 19px;
+				color: #4A6E9F;
+				padding-top: 34px;
+			}
+
+		}
+		&_align {
+			text-align: right;
+		}
+	}
+	&-background {
+		background: #172B46;
+	}
+}

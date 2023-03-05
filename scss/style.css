@@ -1,0 +1,1518 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/* header */
+.header {
+  background: #1E3452;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+.header-content-menu {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.header-content-menu :hover {
+  box-shadow: inset 0 -3px 0 #D1A64A;
+  cursor: pointer;
+}
+.header-content-menu-market {
+  margin-left: 69px;
+}
+.header-content-menu-management {
+  margin-left: 67px;
+}
+.header-content-menu-function {
+  margin-left: 67px;
+}
+.header-content-menu-profession {
+  margin-left: 58px;
+}
+
+.header-btn {
+  background: #D1A64A;
+  border-radius: 100px;
+  width: 119px;
+  height: 38px;
+  margin-left: auto;
+}
+.header-btn-lupa {
+  width: 38px;
+  height: 38px;
+  background: #1E3452;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+  margin-left: 18px;
+}
+.header-btn_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.conteiner {
+  max-width: 1242px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-bottom: 99px;
+}
+.main-content {
+  height: 595px;
+  background-image: url(../img/image_main.jpg);
+  background-position: 100px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-academy_online {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1D1D1D;
+  padding-top: 65px;
+}
+.main-content-academy_hba {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+  color: #1E3452;
+  padding-top: 17px;
+}
+.main-content-academy_btn {
+  width: 360px;
+  height: 52px;
+  background: #21B4C8;
+  border-radius: 100px;
+  margin-top: 54px;
+  margin-left: 5px;
+}
+.main-content-academy_btn_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.main-content-academy_free {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #1E3452;
+  padding-top: 14px;
+  padding-left: 84px;
+}
+.main-content-academy_statistics {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 76px;
+  padding-left: 6px;
+}
+.main-content-academy_statistics_number {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: #D1A64A;
+}
+.main-content-academy_statistics_number_text {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #1D1D1D;
+  padding-top: 8px;
+}
+.main-content-data {
+  background: rgba(255, 255, 255, 0.7);
+}
+.main-content-data_btn {
+  width: 176px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #21B4C8;
+  border-radius: 100px;
+  margin-left: 53px;
+}
+.main-content-data-raspisanie {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #1E3452;
+  margin-top: 47px;
+  margin-left: 62px;
+  margin-bottom: 38px;
+}
+.main-content-data-city {
+  display: flex;
+  margin-left: 62px;
+}
+.main-content-data-city_hr {
+  width: 299px;
+  height: 1px;
+  background: #21B4C8;
+  margin-left: 53px;
+  margin-bottom: 25px;
+}
+.main-content-data-city_number {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  color: #1E3452;
+  margin-right: 23px;
+}
+.main-content-data-city_number_month {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 14px;
+  color: #1E3452;
+}
+.main-content-data-city_suzdal_place {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 14px;
+  color: #1D1D1D;
+}
+.main-content-data-city_suzdal_hbc {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #1D1D1D;
+  padding-top: 14px;
+}
+.main-content-data-city_suzdal_price {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #21B4C8;
+  padding-top: 11px;
+  padding-bottom: 25px;
+}
+
+.table {
+  margin-bottom: 126px;
+}
+.table-content {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+}
+.table-content-items {
+  border-top: 1px solid #C6C6C6;
+}
+.table-content-itemsright {
+  border-right: 1px solid #C6C6C6;
+}
+.table-content-item {
+  width: 311px;
+  border-left: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+}
+.table-content-item_icon {
+  padding-top: 29px;
+  padding-left: 31px;
+}
+.table-content-item_icon_two {
+  padding-top: 24px;
+  padding-left: 31px;
+}
+.table-content-item_icon_seven {
+  padding-top: 20px;
+  padding-left: 31px;
+}
+.table-content-item_text {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1E3452;
+  padding-top: 48px;
+  padding-left: 30px;
+  margin-right: 25px;
+}
+
+.section-heading {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+  color: #1E3452;
+  margin-bottom: 14px;
+}
+.section-hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-bottom: 62px;
+  margin-left: 593px;
+}
+.section-content {
+  position: relative;
+}
+.section-content-btnleft {
+  position: absolute;
+  left: -77px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.section-content-btnright {
+  position: absolute;
+  right: -77px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.section-content-courses {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.section-content-courses-item {
+  width: calc(50% - 18px);
+}
+.section-content-courses-item-key {
+  background: linear-gradient(83.82deg, #0F7A89 5.88%, #21B4C8 90.33%);
+  height: 225px;
+}
+.section-content-courses-item-key_photo {
+  height: 225px;
+  background: url(../img/img_otdel/men.svg) bottom right no-repeat;
+}
+.section-content-courses-item-key_photo_two {
+  height: 225px;
+  background: url(../img/img_otdel/men2\).svg) bottom right no-repeat;
+}
+.section-content-courses-item-key_text {
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+.section-content-courses-item-key_text_capital {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  padding-top: 30px;
+}
+.section-content-courses-item-key_text_info {
+  margin-top: 25px;
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+.section-content-courses-item-start {
+  background: #EEEEEE;
+  height: 53px;
+}
+.section-content-courses-item-start_lesson {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 21px;
+  padding-right: 22px;
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 19px;
+}
+.section-content-courses-item-start_lesson_hour_icon {
+  margin-right: 6px;
+}
+.section-content-courses-item-start_lesson_hour_icon_video {
+  padding-top: 3px;
+  padding-right: 6px;
+}
+.section-content-courses-item-time {
+  border: 1px solid #DEDEDE;
+  height: 127px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.section-content-courses-item-time_activ {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1;
+  color: #919191;
+}
+.section-content-courses-item-time_btn {
+  width: 354px;
+  height: 66px;
+  background: #D1A64A;
+  border-radius: 100px;
+}
+.section-content-courses-item-time_btn_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.section-content-courses-item-time_btn_black {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7c5d1a;
+}
+.section-btn {
+  width: 350px;
+  height: 52px;
+  background: #fdfdfd;
+  border: 2px solid #21B4C8;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 37px;
+  margin-bottom: 61px;
+}
+.section-btn_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.active {
+  height: 840px;
+  background: #F4F4F4;
+  padding-top: 78px;
+}
+.active-lectures {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  color: #1E3452;
+  padding-bottom: 31px;
+}
+.active-content {
+  max-width: 1242px;
+  margin: 0 auto;
+  position: relative;
+}
+.active-content-ivan {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.active-content-ivan-stepanov {
+  width: calc(25% - 16px);
+}
+.active-content-ivan-stepanov_foto {
+  width: 286px;
+  background: #21B4C8;
+  transition: opacity 0.1s linear;
+}
+.active-content-ivan-stepanov_foto :hover {
+  opacity: 0.3;
+}
+.active-content-ivan-stepanov-blok {
+  width: 287px;
+  background: #FFFFFF;
+  padding-left: 19px;
+}
+.active-content-ivan-stepanov-blok-time {
+  display: flex;
+  padding-top: 25px;
+  padding-left: 2px;
+}
+.active-content-ivan-stepanov-blok-time_icon {
+  padding-left: 1px;
+}
+.active-content-ivan-stepanov-blok-time_icon_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 19px;
+  color: #333333;
+  padding-left: 8px;
+  padding-right: 23px;
+}
+.active-content-ivan-stepanov-blok-time_icon_two {
+  padding-top: 3px;
+}
+.active-content-ivan-stepanov-blok_about {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #1E3452;
+  margin-top: 22px;
+}
+.active-content-ivan-stepanov-blok_hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-top: 17px;
+}
+.active-content-ivan-stepanov-blok_name {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #333333;
+  margin-top: 17px;
+}
+.active-content-ivan-stepanov-blok_expert {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #A8A8A8;
+  margin-top: 11px;
+  padding-bottom: 23px;
+}
+.active-content-ivan-stepanov-blok_hrtwo {
+  height: 1px;
+  background: #DEDEDE;
+  margin-right: 29px;
+}
+.active-content-ivan-stepanov-blok-rating {
+  display: flex;
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
+.active-content-ivan-stepanov-blok-rating_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 19px;
+  color: #333333;
+}
+.active-content-ivan-stepanov-blok-rating_text_two {
+  padding-left: 31px;
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 19px;
+  color: #333333;
+}
+.active-content-ivan-stepanov-blok-rating_texts {
+  font-weight: 700;
+}
+.active-content-buttonleft {
+  position: absolute;
+  left: -77px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.active-content-buttonright {
+  position: absolute;
+  right: -77px;
+  top: 50%;
+  transform: rotateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.active-content-btnvideo {
+  width: 340px;
+  height: 52px;
+  background: #F4F4F4;
+  border: 2px solid #21B4C8;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 38px;
+}
+.active-content-btnvideo_text {
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.event-nearest {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #1E3452;
+  margin-top: 69px;
+}
+.event-nearest_hr {
+  height: 3px;
+  width: 57px;
+  background: #D1A64A;
+  margin-top: 16px;
+  margin-left: 599.5px;
+}
+.event-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 52px;
+}
+.event-content-border {
+  background: url(../img/event/Mask\ Group\ \(1\).svg);
+}
+.event-content-rest {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  position: relative;
+  bottom: 7px;
+  right: 7px;
+}
+.event-content-rest_data {
+  width: 196.89px;
+  height: 102.65px;
+  background: url(../img/event/border.svg);
+  position: relative;
+  bottom: 55px;
+  padding-left: 33px;
+  padding-top: 13.34px;
+}
+.event-content-rest_data_may {
+  font-family: "Intro Bold Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1;
+  color: #FFFFFF;
+}
+.event-content-rest_data_city {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-top: 7px;
+}
+.event-content-rest_data_time {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-top: 9px;
+}
+.event-content-rest_camp {
+  margin-top: -35px;
+}
+.event-content-rest_camp_item {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #1E3452;
+}
+.event-content-rest_camp_item_text {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #D1A64A;
+  margin-top: 10px;
+  padding-bottom: 26px;
+}
+.event-content-rest_camp_item_ctrel {
+  margin-top: 7px;
+  margin-left: 5px;
+}
+.event-content-rest_camp_item_thee {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #8B8B8B;
+  margin-top: 23px;
+}
+.event-content-rest_camp_item_hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-top: 15px;
+}
+.event-btn {
+  width: 340px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 2px solid #21B4C8;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 120px;
+}
+.event-btn_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.about {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ECECEC url(../img/bacra.svg) bottom right no-repeat;
+}
+.about-us {
+  height: 590px;
+  background: url(../img/aboutus/О\ НАС.svg) 126px 33px/663px 186px no-repeat;
+}
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us-content-block_hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-top: 98px;
+}
+.about-us-content-block_main {
+  font-family: "Intro Regular";
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #1E3452;
+  margin-top: 27px;
+}
+.about-us-content-block_text {
+  font-family: "Gotham Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #333333;
+  margin-top: 36px;
+}
+.about-us-content-block_btn {
+  width: 307px;
+  height: 49px;
+  background: #21B4C8;
+  border-radius: 100px;
+  margin-top: 50px;
+}
+.about-us-content-block_btn_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.about-us-content_img {
+  margin-top: 137px;
+}
+
+.volov-content {
+  background: url(../img/volkov/volkovimg.svg);
+  background-position: 65% 35%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  padding-bottom: 80px;
+}
+.volov-content-profit {
+  font-family: "Intro Regular";
+  font-size: 35px;
+  line-height: 48px;
+  color: #1E3452;
+}
+.volov-content-botton {
+  width: 553px;
+  height: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.12);
+  margin-top: 87px;
+  margin-left: 25.5px;
+}
+.volov-content-cards {
+  width: 604px;
+  height: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.12);
+  display: flex;
+  margin-top: -287px;
+}
+.volov-content-cards_icon {
+  width: 104px;
+  height: 104px;
+  background: url(../img/volkov/kryg.svg) no-repeat;
+  margin-top: 37px;
+  margin-left: 43px;
+}
+.volov-content-cards_icon_img {
+  padding: 30%;
+}
+.volov-content-info {
+  padding-top: 37px;
+  padding-left: 34px;
+}
+.volov-content-info_pravo {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #1E3452;
+}
+.volov-content-info_text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #333333;
+  margin-top: 24px;
+  margin-right: 34px;
+}
+.volov-content-info_hr {
+  display: flex;
+  margin-top: 30px;
+}
+.volov-content-info_hr :hover {
+  background: #D1A64A;
+}
+.volov-content-info_hr_nomber {
+  width: 30px;
+  height: 2px;
+  background: #DCDCDC;
+  margin-left: 15px;
+}
+.volov-content-name {
+  font-family: "Intro Regular";
+  font-size: 25px;
+  line-height: 30px;
+  color: #333333;
+}
+.volov-content-hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-top: 12px;
+}
+.volov-content-expert {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #868686;
+  margin-top: 21px;
+}
+.volov-content-block {
+  display: flex;
+  margin-top: 34px;
+}
+.volov-content-block_img {
+  margin-top: -25px;
+}
+.volov-content-block_text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #333333;
+  padding-left: 15px;
+}
+
+.teachers {
+  background: #F4F4F4;
+  height: 929px;
+}
+.teachers-sng {
+  font-family: "Intro Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #1E3452;
+  padding-top: 85px;
+}
+.teachers-hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-left: 582px;
+  margin-top: 31px;
+}
+.teachers-text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  color: #333333;
+  margin-top: 31px;
+}
+.teachers-russia {
+  max-width: 1242px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 60px;
+}
+.teachers-russia-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.teachers-russia-content-block {
+  width: calc(25% - 15.5px);
+}
+.teachers-russia-content-block-img {
+  height: 327px;
+  background: #FFFFFF;
+  padding: 20px;
+  padding-left: 48px;
+}
+.teachers-russia-content-block-text {
+  width: 257px;
+  height: 147px;
+  background: #1E3452;
+  position: relative;
+  top: -56px;
+  left: 17px;
+}
+.teachers-russia-content-block-text_name {
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+.teachers-russia-content-block-text_prof {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #50719E;
+  margin-top: 12px;
+}
+.teachers-russia-content-block-text_rating {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+.teachers-russia-btnleft {
+  position: absolute;
+  left: -75px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.teachers-russia-btnright {
+  position: absolute;
+  right: -75px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.teachers-button {
+  width: 302px;
+  height: 52px;
+  border: 2px solid #21B4C8;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+}
+.teachers-button_text {
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.process {
+  height: 692px;
+  background: linear-gradient(135.39deg, #1E3452 22.31%, rgba(30, 66, 82, 0.79) 99.46%);
+}
+.process-content {
+  display: flex;
+  justify-content: space-between;
+}
+.process-content-academy {
+  padding-top: 141px;
+  padding-left: 74px;
+}
+.process-content-academy_text {
+  font-family: "Intro Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-top: -230px;
+  margin-left: -74px;
+}
+.process-content-academy_hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-top: 20px;
+  margin-left: -74px;
+}
+.process-content-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.process-content-item-list {
+  padding-top: 123px;
+  padding-left: 87px;
+}
+.process-content-item-list_number {
+  font-family: "Intro Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #D1A64A;
+}
+.process-content-item-list_title {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  background: linear-gradient(135.39deg, #243b5a 22.31%, rgba(30, 66, 82, 0.79) 99.46%) 0 0/50px 23px no-repeat;
+  background-size: 60px 23px;
+  color: #FFFFFF;
+  position: relative;
+  top: -20px;
+}
+.process-content-item-list_titlefa {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  background: linear-gradient(135.39deg, #434d5c 22.31%, rgba(54, 89, 104, 0.79) 99.46%) 0 0/55px 26px no-repeat;
+  background-size: 66px 26px;
+  color: #FFFFFF;
+  position: relative;
+  top: -20px;
+}
+.process-content-item-list_titletwo {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  background: linear-gradient(135.39deg, #525d6d 22.31%, rgba(54, 89, 104, 0.79) 99.46%) 0 0/55px 26px no-repeat;
+  background-size: 66px 26px;
+  color: #FFFFFF;
+  position: relative;
+  top: -20px;
+}
+.process-content-item-list_text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #89A6BD;
+}
+.process-content-item-listtwo {
+  padding-top: 70px;
+}
+.process-content-item-listtwo-five {
+  padding-top: 50px;
+}
+
+.reviews-content {
+  font-family: "Intro Regular";
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #1E3452;
+  margin-top: 123px;
+}
+.reviews-hr {
+  width: 57px;
+  height: 3px;
+  background: #D1A64A;
+  margin-top: 10px;
+  margin-left: 582px;
+}
+.reviews-row {
+  max-width: 1242px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 70px;
+}
+.reviews-row-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.reviews-row-block-anna {
+  width: calc(50% - 14px);
+}
+.reviews-row-block-anna-story {
+  height: 326px;
+  background: url(../img/reviews/«.svg) 93% 85% no-repeat, url(../img/reviews/sms.svg) 100% no-repeat;
+  padding-left: 30px;
+}
+.reviews-row-block-anna-story_title {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #1E3452;
+  padding-top: 30px;
+}
+.reviews-row-block-anna-story_text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #333333;
+  padding-top: 25px;
+}
+.reviews-row-block-anna-story_next {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #D1A64A;
+  padding-top: 25px;
+}
+.reviews-row-block-anna-name {
+  display: flex;
+}
+.reviews-row-block-anna-name_img {
+  margin-top: 24px;
+}
+.reviews-row-block-anna-name_desc {
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  line-height: 23px;
+  color: #21B4C8;
+  margin-top: 34px;
+  margin-left: 12px;
+}
+.reviews-row-block-anna-name_text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #727272;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.reviews-row-block-anna-name_icon {
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.reviews-row-block-anna-name_icontwo {
+  margin-top: 9px;
+  margin-left: 15px;
+}
+.reviews-row_btnleft {
+  position: absolute;
+  left: -75px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.reviews-row_btnright {
+  position: absolute;
+  right: -75px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 61px;
+  height: 61px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 2px solid #D1A64A;
+}
+.reviews-caption {
+  font-family: "Intro Regular";
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #1E3452;
+  margin-top: 162px;
+  margin-bottom: 40px;
+}
+.reviews-imgs {
+  margin-top: 103px;
+  margin-left: 106px;
+  margin-bottom: 158px;
+}
+
+.home {
+  background-color: #EDEDED;
+  height: 406px;
+  margin-top: 68px;
+  padding-top: 76px;
+}
+.home-row {
+  display: flex;
+  justify-content: space-between;
+}
+.home-row-list-twolist {
+  width: 609px;
+  height: 265px;
+  background: url(../img/home/background.svg);
+}
+.home-row-list-twolist-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+.home-row-list-twolist-text-item_caption {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-left: 28px;
+}
+.home-row-list-twolist-text-item_texts {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 28px;
+  margin-top: 12px;
+}
+.home-row-list-twolist-text_messenger {
+  padding-right: 40px;
+}
+.home-row-list-twolist-aside {
+  margin-left: 28px;
+  margin-top: 30px;
+}
+.home-row-list-twolist-aside_btn {
+  width: 231px;
+  height: 41px;
+  background: #D1A64A;
+  border-radius: 100px;
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+.home-row-list-twolist-aside_button {
+  width: 300px;
+  height: 41px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #858585;
+}
+.home-col {
+  background: url(../img/home/imagepensel.svg) 0 0/100% auto no-repeat;
+  height: 265px;
+}
+.home-col-border {
+  width: 605px;
+  height: 265px;
+  border: 2px solid #D1A64A;
+  position: relative;
+  bottom: 228px;
+  right: -8px;
+}
+.home-col__title {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #1E3452;
+  margin-top: 38px;
+  margin-left: 40px;
+}
+.home-col__text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #1E3452;
+  margin-top: 27px;
+  margin-left: 40px;
+}
+.home-col__btn {
+  width: 288px;
+  height: 41px;
+  background: #21B4C8;
+  border-radius: 100px;
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 27px;
+  margin-left: 40px;
+}
+
+.footer {
+  background: #1E3452;
+}
+.footer-logo {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.footer-logo-info_tel {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  color: #FFFFFF;
+  padding-top: 45px;
+}
+.footer-logo-info_imel {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #D1A64A;
+  padding-top: 11px;
+}
+.footer-logo-info-icon_img {
+  padding-top: 30px;
+  padding-right: 36px;
+}
+.footer-logo-list {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.footer-logo-list_item {
+  padding-bottom: 20px;
+}
+.footer-logo-list_li {
+  padding-top: 7px;
+  padding-right: 7px;
+}
+.footer-logo-list_left {
+  padding-left: 13px;
+}
+.footer-logo-btn {
+  width: 278px;
+  height: 39px;
+  background: #D1A64A;
+  border-radius: 100px;
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.footer-hba {
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-hba_text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #4A6E9F;
+  padding-top: 24px;
+}
+.footer-hba_text-hotel {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #4A6E9F;
+  padding-top: 34px;
+}
+.footer-hba_align {
+  text-align: right;
+}
+.footer-background {
+  background: #172B46;
+}/*# sourceMappingURL=style.css.map */
